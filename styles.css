@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* navigation */
+
+.nav-content {
+    font-family: 'Oswald', sans-serif; 
+    padding: 0 0 0 50px;
+}
+.collapsible-nav {
+    background-color: rgb(255, 255, 255);
+    padding: 0px 30px;
+    border-bottom: 3px solid #CDE700;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
+}
+.collapsible-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+.collapsible-nav a {
+    display:block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.collapsible-nav label {
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 56px;
+    display: block;
+    cursor: pointer;
+    background: url(./assets/menu.png) no-repeat left center;
+    padding: 10px 0 10px 50px;
+}
+input#nav {
+    display: none;
+}
+input:checked +label {
+    background-image: url(./assets/close.png);
+}
+
+/* hero */
+
+#hero {
+    object-fit: cover;
+    width: 100%;
+}
+
+/* li {
+    display: inline;
+} */
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#navbar a:hover {
+    color: rgb(222, 0, 0);
+}
