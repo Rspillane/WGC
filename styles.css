@@ -27,12 +27,14 @@
 
 .collapsible-nav label {
     font-family: 'Sedgwick Ave Display', cursive;
-    font-size: 56px;
+    height: 12px;
+    font-size: 10px;
     display: block;
     cursor: pointer;
-    background: url(./assets/menu.png) no-repeat left center;
+    background: url(./assets/menu.png) no-repeat right center;
     padding: 10px 0 10px 50px;
 }
+
 input#nav {
     display: none;
 }
@@ -40,13 +42,29 @@ input:checked +label {
     background-image: url(./assets/close.png);
 }
 
-/* hero */
-
-#hero {
-    object-fit: cover;
-    width: 100%;
+.nav-content {
+    max-height: 0;
+    overflow: hidden;
+    font-family: 'Oswald', sans-serif; 
+    padding: 0 0 0 0px;
+}
+/* Toggle Effect */
+input:checked ~ label {
+    background-image: url(./assets/close.png);
+}
+input:checked ~ .nav-content {
+    max-height: 100%;
 }
 
+/* hero */
+
+.hero {
+    object-fit: cover;
+    background-image: url(./assets/cover-high-res-1024x578.jpg);
+    height: 400px;
+}
+
+/* Media query for desktop */
 /* li {
     display: inline;
 } */
@@ -62,4 +80,69 @@ a {
 
 #navbar a:hover {
     color: rgb(222, 0, 0);
+}
+
+/* intro */
+
+#intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    row-gap: 20px;
+    padding: 50px;
+}
+
+.intro-description {
+    display: flex;
+    text-align: center;
+}
+
+
+
+/* Page Link */
+#page-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 75px;
+    padding: 50px;
+}
+
+.page-link {
+    display: flex;
+    flex-direction: column;
+    padding: 2px 4px;
+    /* border: solid black 1px; */
+    width: 220px;
+}
+
+.link-img {
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* contact */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 50px;
+}
+
+.contact-title {
+    padding-bottom: 20px;
+}
+
+
+/* footer */
+
+footer {
+    height: 100px;
+    padding: 20px;
+    color: white;
+    background-color: black;
+    display: block;
 }
