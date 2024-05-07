@@ -13,7 +13,7 @@
 .collapsible-nav {
     background-color: rgb(255, 255, 255);
     padding: 0px 30px;
-    border-bottom: 3px solid #CDE700;
+    border-bottom: 1px solid black;
     box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
 }
 .collapsible-nav ul {
@@ -92,23 +92,9 @@ a {
 
     row-gap: 20px;
     padding: 50px;
-}
-
-.intro-description {
-    display: flex;
     text-align: center;
 }
 
-/* info section */
-
-#info-section {
-    padding-inline: 50px;
-    text-align: center;
-}
-
-#info-section p{
-    margin-bottom: 10px;
-}
 
 
 /* Page Link */
