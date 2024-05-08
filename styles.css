@@ -6,49 +6,88 @@
 
 /* navigation */
 
-.nav-content {
-    font-family: "Lucida Grande", Arial, "Lucida Sans Unicode", sans-serif;
-    padding: 0 0 0 50px;
-}
-.collapsible-nav {
-    background-color: rgb(255, 255, 255);
-    padding: 0px 30px;
-    border-bottom: 1px solid black;
-    box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
-}
-.collapsible-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-.collapsible-nav a {
-    display:block;
-    padding: 10px;
-    text-decoration: none;
-}
 
-.collapsible-nav label {
-    font-family: 'Sedgwick Ave Display', cursive;
-    height: 12px;
-    font-size: 10px;
+/* Mobile */
+@media screen and (max-width: 650px) {
+
+    .inline-nav{
+        display: none;
+    }
+
+    h1 {padding: 40px; text-align: center; font-size: 1.5em;}
+
+    li a {text-decoration : none; color : #2d2f31;}
+
+
+    nav {
+    width : 100%; 
+    background: #d9d9d9;
+    }
+
+    span {
+    padding : 15px;
+    background : #2d2f31; 
+    color : white;
+    font-size : 1.2em;
+    font-variant : small-caps;
+    cursor : pointer;
     display: block;
-    cursor: pointer;
-    background: url(./assets/menu.png) no-repeat right center;
-    padding: 10px 0 10px 50px;
-}
+    }
 
-input#nav {
-    display: none;
-}
-input:checked +label {
-    background-image: url(./assets/close.png);
-}
+    span::after {
+    float: right;
+    right: 10%;
+    content: "+";
+    }
 
-.nav-content {
-    max-height: 0;
+    .slide {
+    clear:both;
+    width:100%;
+    height:0px;
     overflow: hidden;
-    font-family: 'Oswald', sans-serif; 
-    padding: 0 0 0 0px;
+    text-align: center;
+    transition: height .4s ease;
+    }
+
+    .slide li {padding : 30px;}
+
+    #touch {position: absolute; opacity: 0; height: 0px;}    
+
+    #touch:checked + .slide {height: 300px;} 
 }
+
+@media screen and (min-width: 650px) {
+    .slide, #touch, label{
+        display: none;
+    }
+
+    /* Style for the unordered list */
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    /* Style for the list items */
+    li {
+        display: inline;
+        margin-right: 10px; /* Adjust as needed */
+    }
+
+    .nav-content{
+        display: flex;
+        justify-content: center;
+        padding: 10px 0px;
+    }
+
+    .nav-item{
+        padding: 0px 10px;
+    }
+}
+
+/* Website */
+
+
 /* Toggle Effect */
 input:checked ~ label {
     background-image: url(./assets/close.png);
@@ -112,6 +151,9 @@ a {
     /* border: solid black 1px; */
     width: 350px;
     position: relative;
+    border-radius: 5px;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .link-info {
