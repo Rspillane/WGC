@@ -14,7 +14,7 @@
         display: none;
     }
 
-    h1 {padding: 40px; text-align: center; font-size: 1.5em;}
+    h1 {text-align: center;}
 
     li a {text-decoration : none; color : #2d2f31;}
 
@@ -104,15 +104,6 @@ input:checked ~ .nav-content {
     height: 400px;
 }
 
-/* Media query for desktop */
-/* li {
-    display: inline;
-} */
-
-ul {
-    list-style-type: none;
-}
-
 a {
     text-decoration: none;
     color: inherit;
@@ -121,6 +112,11 @@ a {
 #navbar a:hover {
     color: rgb(222, 0, 0);
 }
+
+/* Transition */
+
+
+
 
 /* intro */
 

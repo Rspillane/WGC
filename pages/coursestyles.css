@@ -1,5 +1,14 @@
 #prices {
     padding-inline: 50px;
+    margin-top: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prices-title{
+    margin-bottom: 30px;;
 }
 
 .time-table {
@@ -20,3 +29,22 @@
     margin-bottom: 30px;
 }
 
+.course-header-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.course-header-image:hover{
+    filter: brightness(80%);
+}
+
+.course-header-title{
+    color: white;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    z-index: 1;
+}
