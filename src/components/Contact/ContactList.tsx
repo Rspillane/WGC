@@ -41,8 +41,7 @@ const MOCKDATA = [
     description:
       "Warwick Golf Centre, The Racecourse, Hampton Street, Warwick, CV34 6HW",
     icon: IconMapPin
-  },
-  { title: "Working hours", description: "8 a.m. – 7 p.m.", icon: IconSun }
+  }
 ];
 
 export function ContactList() {
