@@ -12,7 +12,6 @@ const links = [
     links: [
       { link: '/membership', label: 'Membership' },
       { link: '/visitors', label: 'Visitors' },
-      { link: '/community', label: 'Community' },
     ],
   },
   { link: '/drivingrange', label: 'Driving Range' },

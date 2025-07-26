@@ -1,4 +1,4 @@
-import { Button, Container, Text, Title } from "@mantine/core";
+import { Container, Text, Title } from "@mantine/core";
 import classes from "./Hero.module.css";
 
 export function Hero() {
@@ -13,7 +13,7 @@ export function Hero() {
                 component="span"
                 inherit
                 variant="gradient"
-                gradient={{ from: "#06482e", to: "#06482e" }}
+                gradient={{ from: "#0b955eff", to: "#0b955eff" }}
               >
                 Warwick Golf Centre
               </Text>

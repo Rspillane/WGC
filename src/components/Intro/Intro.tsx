@@ -5,9 +5,9 @@ import {
   IconReceiptOff
 } from "@tabler/icons-react";
 import {
-  Button,
+  // Button,
   Grid,
-  SimpleGrid,
+  // SimpleGrid,
   Text,
   ThemeIcon,
   Title
@@ -78,11 +78,11 @@ export function Intro() {
             Warwick Golf Centre is open to everyone.
           </Text>
         </Grid.Col>
-        <Grid.Col span={{ base: 12, md: 7 }}>
+        {/* <Grid.Col span={{ base: 12, md: 7 }}>
           <SimpleGrid cols={{ base: 1, md: 2 }} spacing={30}>
             {items}
           </SimpleGrid>
-        </Grid.Col>
+        </Grid.Col> */}
       </Grid>
     </div>
   );
